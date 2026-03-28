@@ -92,7 +92,7 @@ function handleLogin(event) {
 	const password = document.getElementById('password').value;
 	const errorMsg = document.getElementById('login-error');
 	if (username === 'selamawit' && password === 'elamawit#123') {
-		window.location.href = 'dashboard.html';
+		window.location.href = '../HTML/dashboard.html';
 	} else {
 		errorMsg.textContent = 'Invalid username or password.';
 		errorMsg.style.display = 'block';
