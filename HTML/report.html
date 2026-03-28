@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - User Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Reports</h1>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="../HTML/settings.html">Settings</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-profile">
+                <img src="../img/IMG_20230821_183748_189.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, Selamawit Worku!</span>
+            </div>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="../HTML/dashboard.html">Dashboard</a></li>
+                <li><a href="../HTML/analytics.html">Analytics</a></li>
+                <li><a href="../HTML/users.html">Users</a></li>
+                <li><a href="../HTML/report.html" class="active">Reports</a></li>
+                <li><a href="../HTML/settings.html">Settings</a></li>
+                <li><a href="../HTML/logout.html">Logout</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="dashboard-overview">
+                <h2>Reports</h2>
+                <p class="overview-subtitle">Generate and review system reports</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Weekly Report</h3>
+                        <p class="stat-number">Ready</p>
+                        <span class="stat-change positive">↗️ Available</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Monthly Report</h3>
+                        <p class="stat-number">Ready</p>
+                        <span class="stat-change positive">↗️ Available</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Quarterly Report</h3>
+                        <p class="stat-number">Pending</p>
+                        <span class="stat-change negative">↘️ Processing</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Annual Report</h3>
+                        <p class="stat-number">Pending</p>
+                        <span class="stat-change negative">↘️ Processing</span>
+                    </div>
+                </div>
+            </section>
+            <section class="data-table">
+                <h2>Report Generation</h2>
+                <div class="action-buttons">
+                    <button class="btn-primary">Generate Weekly</button>
+                    <button class="btn-secondary">Generate Monthly</button>
+                    <button class="btn-secondary">Generate Quarterly</button>
+                    <button class="btn-secondary">Generate Annual</button>
+                </div>
+            </section>
+            <section class="data-table">
+                <h2>Recent Reports</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weekly Summary</td>
+                            <td>2026-03-20</td>
+                            <td><span class="status active">Completed</span></td>
+                            <td><a href="#" class="action-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Overview</td>
+                            <td>2026-03-01</td>
+                            <td><span class="status active">Completed</span></td>
+                            <td><a href="#" class="action-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>Quarterly Performance</td>
+                            <td>2026-01-01</td>
+                            <td><span class="status inactive">Pending</span></td>
+                            <td><a href="#" class="action-link">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

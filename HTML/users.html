@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - User Dashboard</title>
+    <link rel="stylesheet" href="../CSS/users.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Users</h1>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="../HTML/settings.html">Settings</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-profile">
+                <img src="../img/IMG_20230821_183748_189.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, Selamawit Worku!</span>
+            </div>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="../HTML/dashboard.html">Dashboard</a></li>
+                <li><a href="../HTML/analytics.html">Analytics</a></li>
+                <li><a href="../HTML/users.html" class="active">Users</a></li>
+                <li><a href="../HTML/report.html">Reports</a></li>
+                <li><a href="../HTML/settings.html">Settings</a></li>
+                <li><a href="../HTML/logout.html">Logout</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="users-overview">
+                <div class="overview-header">
+                    <h2>👥 Users Overview</h2>
+                    <p class="overview-subtitle">User management and growth metrics</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card highlight">
+                        <div class="stat-icon">👤</div>
+                        <h3>Total Users</h3>
+                        <p class="stat-number">1,234</p>
+                        <span class="stat-change positive">↗️ +5%</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <h3>Active Users</h3>
+                        <p class="stat-number">987</p>
+                        <span class="stat-change positive">↗️ +3%</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🆕</div>
+                        <h3>New This Month</h3>
+                        <p class="stat-number">156</p>
+                        <span class="stat-change positive">↗️ +12%</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🚫</div>
+                        <h3>Inactive Users</h3>
+                        <p class="stat-number">247</p>
+                        <span class="stat-change negative">↘️ -8%</span>
+                    </div>
+                </div>
+                <div class="quick-insights">
+                    <div class="insight-card">
+                        <h4>📈 User Growth</h4>
+                        <p>Steady increase in user registrations and engagement</p>
+                    </div>
+                    <div class="insight-card">
+                        <h4>🎯 Retention</h4>
+                        <p>High user retention with decreasing inactive accounts</p>
+                    </div>
+                </div>
+            </section>
+            <section class="add-user" id="add-user">
+                <h2>Add New User</h2>
+                <form class="user-form">
+                    <!-- User Information -->
+                    <div class="form-section">
+                        <h3>User Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username *</label>
+                                <input type="text" id="username" name="username" placeholder="Choose username" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">Password *</label>
+                                <input type="password" id="password" name="password" placeholder="Create password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="role">User Role</label>
+                                <select id="role" name="role">
+                                    <option value="user">User</option>
+                                    <option value="admin">Administrator</option>
+                                    <option value="moderator">Moderator</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="department">Department</label>
+                                <select id="department" name="department">
+                                    <option value="">Select department</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="sales">Sales</option>
+                                    <option value="hr">Human Resources</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <select id="status" name="status">
+                                    <option value="active">Active</option>
+                                    <option value="inactive">Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" placeholder="City, Country">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="notes">Notes</label>
+                                <textarea id="notes" name="notes" rows="2" placeholder="Any additional notes about the user"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="notifications" name="notifications" checked>
+                                    Enable email notifications
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Create User</button>
+                        <button type="reset" class="btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+            <section class="user-management">
+                <h2>User Management</h2>
+                <div class="action-buttons">
+                    <button class="btn-secondary">Export Users</button>
+                    <button class="btn-secondary">Import Users</button>
+                    <button class="btn-secondary">Bulk Actions</button>
+                </div>
+            </section>
+            <section class="data-table">
+                <h2>Recent Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>alice@example.com</td>
+                            <td>Admin</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>2023-10-15</td>
+                            <td><a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bob Smith</td>
+                            <td>bob@example.com</td>
+                            <td>User</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>2023-10-14</td>
+                            <td><a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Charlie Brown</td>
+                            <td>charlie@example.com</td>
+                            <td>Moderator</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td>2023-10-10</td>
+                            <td><a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Diana Prince</td>
+                            <td>diana@example.com</td>
+                            <td>User</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>2023-10-12</td>
+                            <td><a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Eve Wilson</td>
+                            <td>eve@example.com</td>
+                            <td>User</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>2023-10-13</td>
+                            <td><a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="../JS/theme.js"></script>
+</body>
+</html>
